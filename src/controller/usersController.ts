@@ -1,6 +1,7 @@
 import { Request, Response } from "express"
 import { rankAllFighters } from "../repositories/usersRepositories.js"
 import { checkUserInformation } from "../services/usersServices.js"
+import Joi from "joi"
 
 export async function getUserInformation(req: Request, res: Response) {
     try{
